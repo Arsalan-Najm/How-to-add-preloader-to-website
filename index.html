@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>How to add pre-loader to webpage</title>
+	<script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<div class="loading">
+		<div class="loader"></div>
+	</div>
+	<div class="page-content">
+		<p>Page Content</p>
+	</div>
+	<script>
+		$(window).on("load",function(){
+			$(".loading").fadeOut(1000);
+		});
+	</script>
+</body>
+</html>
